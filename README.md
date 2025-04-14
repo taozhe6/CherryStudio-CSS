@@ -3,6 +3,17 @@
 - 双主题支持：模仿Claude的浅色和深色模式
 - 优化的排版：使用"Noto Serif SC"作为主字体，提供舒适的阅读体验
 - 代码显示增强：使用"JetBrains Mono"等宽字体优化代码块显示
+
+## 效果演示：
+### 浅色模式
+![浅色模式](/LightMode.png)
+
+---
+
+### 深色模式
+![深色模式](/DarkMode.png)
+
+## 使用方式
 下载或复制以下代码到CherryStudio里即可：
 ```css
 /*** CherryStudio-Claude CSS ***/
@@ -141,11 +152,3 @@ body[theme-mode='dark'] #inputbar {
 }
 ```
 
-# 效果演示：
-## 浅色模式
-![浅色模式](/LightMode.png)
-
----
-
-## 深色模式
-![深色模式](/DarkMode.png)
