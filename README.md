@@ -156,4 +156,4 @@ body[theme-mode='dark'] #inputbar {
     background-color: var(--color-background-mute); /* 使用背景色变量修复悬停效果 */
 }
 ```
-CSDN🔗：![CherryStudio 自定义 Claude Web样式主题 - CSDN](https://blog.csdn.net/weixin_55068057/article/details/147230529?sharetype=blog&shareId=147230529&sharerefer=APP&sharesource=weixin_55068057&sharefrom=link)
+CSDN🔗：![CherryStudio 自定义 Claude Web样式主题 - CSDN](https://blog.csdn.net/weixin_55068057/article/details/147230529?spm=1001.2014.3001.5502)
