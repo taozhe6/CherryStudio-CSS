@@ -62,12 +62,12 @@ pre.code-block,
 .markdown-body pre {
     font-family: "JetBrains Mono", monospace !important; /* 确保最高优先级 */
     font-weight: normal !important; 
-    font-size: 0.96em !important;
+    font-size: 1.0em !important;
     line-height: 1.5 !important; /* 设置代码的行高更适合阅读 */
 }
 
 /* 确保代码块内的文本使用正确字体 */
-pre *, code *, .code-block *, .hljs * {
+code *{
     font-family: "JetBrains Mono", monospace !important;
 }
 
