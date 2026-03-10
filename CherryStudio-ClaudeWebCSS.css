@@ -11,7 +11,7 @@
     padding: 10px 10px 0 10px !important;
     transition: transform 0.22s cubic-bezier(0.34,1.56,0.64,1) !important;
     border: none !important;
-    box-shadow: none !important;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04) !important;
 }
 
 .message-user .message-content-container {
@@ -29,17 +29,25 @@
     backdrop-filter: blur(8px) !important;
 }
 
-/* 全局样式设置 - 融合中英文字体优先序 */
+/* 全局样式设置 - Claude 2026 sans-serif 字体栈 */
 * {
-    font-family: Georgia, 'Times New Roman', "Noto Serif SC", system-ui !important;
-    line-height: 1.7 !important;
-    letter-spacing: 0.018em !important;
-    font-weight: 500;
+    font-family: "Inter", "SF Pro Display", "LXGW WenKai Screen R", system-ui, -apple-system, BlinkMacSystemFont, sans-serif !important;
+    line-height: 1.68 !important;
+    letter-spacing: -0.003em !important;
+    font-weight: 420;
 }
 
 /* 强化标题与正文的排版层级 */
 h1, h2, h3, p, li {
-    font-family: Georgia, 'Times New Roman', "Noto Serif SC", system-ui !important;
+    font-family: "Inter", "SF Pro Display", "LXGW WenKai Screen R", system-ui, -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
+
+/* 强制关键容器使用 sans-serif 字体 */
+.message-content, .prose, body, pre, code {
+    font-family: "Inter", "SF Pro Display", "LXGW WenKai Screen R", system-ui, -apple-system, BlinkMacSystemFont, sans-serif !important;
+    line-height: 1.68 !important;
+    font-weight: 420;
+    letter-spacing: -0.003em !important;
 }
 
 /* 设置代码字体为 JetBrains Mono - 提高选择器优先级 */
@@ -58,7 +66,7 @@ div.code,
 pre.code-block,
 .markdown-body code,
 .markdown-body pre {
-    font-family: "JetBrains Mono", monospace !important; /* 确保最高优先级 */
+    font-family: "JetBrains Mono", "SF Mono", ui-monospace, monospace !important; /* 确保最高优先级 */
     font-weight: normal !important; 
     font-size: 0.96em !important;
     line-height: 1.5 !important; /* 设置代码的行高更适合阅读 */
@@ -66,7 +74,7 @@ pre.code-block,
 
 /* 确保代码块内的文本使用正确字体 */
 pre *, code *, .code-block *, .hljs * {
-    font-family: "JetBrains Mono", monospace !important;
+    font-family: "JetBrains Mono", "SF Mono", ui-monospace, monospace !important;
 }
 
 
@@ -88,7 +96,7 @@ body[theme-mode='light'] {
     
     --color-text: #262624;             /* 文字颜色（深色） */
     --color-border: rgba(35, 35, 45, 0.12); /* 边框颜色 */
-    --color-white: #ffffff;
+    --color-white: #FAF9F4;
 }
 
 /* 深色模式颜色定义 - 融合Claude深色主题 */
