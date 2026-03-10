@@ -29,12 +29,17 @@
     backdrop-filter: blur(8px) !important;
 }
 
-/* 全局样式设置 - 设置基本字体、行高、字母间距和字体粗细 */
+/* 全局样式设置 - 融合中英文字体优先序 */
 * {
-    font-family: "Noto Serif SC", system-ui !important;
+    font-family: Georgia, 'Times New Roman', "Noto Serif SC", system-ui !important;
     line-height: 1.7 !important;
     letter-spacing: 0.018em !important;
     font-weight: 500;
+}
+
+/* 强化标题与正文的排版层级 */
+h1, h2, h3, p, li {
+    font-family: Georgia, 'Times New Roman', "Noto Serif SC", system-ui !important;
 }
 
 /* 设置代码字体为 JetBrains Mono - 提高选择器优先级 */
@@ -83,6 +88,7 @@ body[theme-mode='light'] {
     
     --color-text: #262624;             /* 文字颜色（深色） */
     --color-border: rgba(35, 35, 45, 0.12); /* 边框颜色 */
+    --color-white: #ffffff;
 }
 
 /* 深色模式颜色定义 - 融合Claude深色主题 */
@@ -131,4 +137,13 @@ body[theme-mode='dark'] #inputbar {
 /* Bug fixes */
 .bubble .message-user .message-action-button:hover {
     background-color: var(--color-background-mute); /* 使用背景色变量修复悬停效果 */
+}
+
+/* 强制锁死主容器背景，防止默认底色侧漏 */
+body[theme-mode="dark"]#content-container {
+    background-color: var(--color-background) !important;
+}
+
+body[theme-mode="light"]#content-container {
+    background-color: var(--color-background) !important;
 }
